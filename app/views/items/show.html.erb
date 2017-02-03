@@ -1,0 +1,10 @@
+<div class="col-md-6 col-md-offser-3"></div>
+<h2>Show Page</h2>
+<h2><%=  @item.title%></h2>
+<%= @item.description%>
+
+
+<%= link_to "Back " , root_path%>
+<%= link_to "Edit", edit_item_path(@item)%>
+<%=  link_to "Delete", item_path(@item), method: :Delete, data: {confirm: "Are you sure ?"}%>
+</div><!--col-md-6 col-md-offser-3-->
